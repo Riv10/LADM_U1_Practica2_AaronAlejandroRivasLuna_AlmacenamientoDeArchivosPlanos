@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/msjNombreD"
+        android:text="Ingresa el nombre del dueño:"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/txtNombreD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/msjNombreD" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/msjTel"
+        android:text="Telefono:"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/txtNombreD"/>
+
+    <EditText
+        android:id="@+id/txtTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="1234567890"
+        android:inputType="number"
+        android:layout_below="@id/msjTel" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/msjNombrePerro"
+        android:text="Ingresa el nombre del perro:"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/txtTel"/>
+
+    <EditText
+        android:id="@+id/txtNombrePerro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/msjNombrePerro" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/msjSexo"
+        android:text="Sexo:"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/txtNombrePerro"/>
+
+    <EditText
+        android:id="@+id/txtSexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/msjSexo"
+        android:hint="Macho/Hembra" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/msjEdad"
+        android:text="Edad:"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/txtSexo"/>
+
+    <EditText
+        android:id="@+id/txtEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/msjEdad"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/msjPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEdad"
+        android:text="Peso (Kg):"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/txtPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/msjPeso"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/msjRaza"
+        android:text="Raza:"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/txtPeso"/>
+
+    <EditText
+        android:id="@+id/txtRaza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Chihuahua, etc."
+        android:layout_below="@id/msjRaza" />
+
+    <Button
+        android:id="@+id/btnGuardarU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insertar Datos"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtRaza"/>
+
+</RelativeLayout>
